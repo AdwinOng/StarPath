@@ -1,0 +1,69 @@
+CREATE TABLE venue( 
+vID VARCHAR(6) PRIMARY KEY,
+vName VARCHAR(40) NOT NULL,
+vAdd VARCHAR(150),
+vState VARCHAR(20),
+vSeatQty INTEGER,
+vImg VARCHAR(40));
+--=====================================================================
+CREATE TABLE seat( 
+sID VARCHAR(6)  NOT NULL PRIMARY KEY,
+vID VARCHAR(6),
+sType VARCHAR(50),
+sPriceModifier DOUBLE,
+FOREIGN KEY(vID) REFERENCES venue(vID));
+--=====================================================================
+CREATE TABLE member( 
+mID VARCHAR(6) PRIMARY KEY,
+mName VARCHAR(40) NOT NULL,
+mEmail VARCHAR(40),
+mPwd VARCHAR(15) NOT NULL,
+mPoint INTEGER);
+--=====================================================================
+CREATE TABLE redemptionItem( 
+rID VARCHAR(9) NOT NULL PRIMARY KEY,
+rName VARCHAR(60),
+rStock INTEGER,
+rPointNeeded INTEGER,
+rDesc VARCHAR(150),
+rImg VARCHAR(40) );
+--=====================================================================
+CREATE TABLE band( 
+bID VARCHAR(6) NOT NULL PRIMARY KEY,
+bName VARCHAR(50),
+bDesc VARCHAR(200));
+--=====================================================================
+CREATE TABLE concert ( 
+cID VARCHAR(6) NOT NULL PRIMARY KEY,
+cName VARCHAR(100),
+cDate DATE,
+bID VARCHAR(6),
+vID VARCHAR(6),
+cBasePrice DOUBLE,
+cImg VARCHAR(40),
+
+FOREIGN KEY(bID) REFERENCES band(bID),
+FOREIGN KEY(vID) REFERENCES venue(vID));
+--=====================================================================
+CREATE TABLE ticket (
+tID VARCHAR(6) NOT NULL PRIMARY KEY,
+tQty INTEGER,
+cID VARCHAR(6),
+sID VARCHAR(6),
+mID VARCHAR(6),
+
+FOREIGN KEY(cID) REFERENCES concert(cID),
+FOREIGN KEY(sID) REFERENCES seat(sID),
+FOREIGN KEY(mID) REFERENCES member(mID));
+--=====================================================================
+CREATE TABLE redemptionTrans(
+rdID VARCHAR(6) NOT NULL PRIMARY KEY,
+mID VARCHAR(6),
+rID VARCHAR(9),
+rdQty INTEGER,
+rdDate Date,
+
+FOREIGN KEY(mID) REFERENCES member(mID),
+FOREIGN KEY(rID) REFERENCES redemptionItem(rID));
+--=================
+--=================

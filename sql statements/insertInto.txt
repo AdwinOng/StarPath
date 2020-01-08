@@ -1,0 +1,118 @@
+--Member=============================================================================================
+INSERT INTO MEMBER (MID, MNAME, MEMAIL, MPWD, MPOINT) 
+	VALUES ('M00001', 'Andy Lau', 'andylau@gmail.com', 'andy123', 598);
+INSERT INTO MEMBER (MID, MNAME, MEMAIL, MPWD, MPOINT) 
+	VALUES ('M00002', 'Alvin Lim Shao Wei', 'alvin00@yahoo.com', 'shaowei123', 0);
+INSERT INTO MEMBER (MID, MNAME, MEMAIL, MPWD, MPOINT) 
+	VALUES ('M00003', 'Jonathan Ong', 'ongong@hotmail.com', 'png123', 938);
+INSERT INTO MEMBER (MID, MNAME, MEMAIL, MPWD, MPOINT) 
+	VALUES ('M00004', 'Susan LimYee Li', 'susanlim@gmail.com', 'susan00', 363);
+INSERT INTO MEMBER (MID, MNAME, MEMAIL, MPWD, MPOINT) 
+	VALUES ('M00005', 'Alice Yeap Hooi Ming', 'hooiming@yahoo.com', 'hooiming88', 976);
+INSERT INTO MEMBER (MID, MNAME, MEMAIL, MPWD, MPOINT) 
+	VALUES ('M00006', 'Adwin Ong Kok Quan', 'adwinstrator@mail.com', 'adwin123', 5000);
+
+--Venue=============================================================================================
+INSERT INTO VENUE (VID, VNAME, VADD, VSTATE, VSEATQTY, VIMG) 
+	VALUES ('KLBJ01', 'Stadium Nasional Bukit Jalil', 'Jalan Barat, Bukit Jalil, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur', 'Kuala Lumpur', 57411, 'stadium-nasional-bukit-jalil.jpg');
+INSERT INTO VENUE (VID, VNAME, VADD, VSTATE, VSEATQTY, VIMG) 
+	VALUES ('KLAA01', 'Axiata Arena', 'Lebuhraya Bukit Jalil, Jalan Barat, Bukit Jalil, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia', 'Kuala Lumpur', 16000, 'axiata-arena.jpg');
+INSERT INTO VENUE (VID, VNAME, VADD, VSTATE, VSEATQTY, VIMG) 
+	VALUES ('PGSA01', 'Setia Spice Arena', '108, Jalan Tun Dr Awang, Bayan Baru, 11900 Bayan Lepas, Pulau Pinang', 'Pulau Pinang', 10000, 'setia-spice-arena.jpg');
+INSERT INTO VENUE (VID, VNAME, VADD, VSTATE, VSEATQTY, VIMG) 
+	VALUES ('PHAS01', 'Arena of Stars', 'Arena Of Stars, Resorts World Genting Genting Highlands, 69000 Bentong, Pahang.', 'Pahang', 6000, 'arena-of-stars.jpg');
+INSERT INTO VENUE (VID, VNAME, VADD, VSTATE, VSEATQTY, VIMG) 
+	VALUES ('KLSM01', 'Stadium Malawati', 'Stadium Malawati, Persiaran Sukan, Seksyen 13, 40100 Shah Alam, Selangor, Malaysia', 'Selangor', 13000, 'stadium-malawati.png');
+		
+--Seat=============================================================================================
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('BJ0001', 'KLBJ01', 'CAT1', 1.838);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('BJ0002', 'KLBJ01', 'CAT2', 1.738);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('BJ0003', 'KLBJ01', 'CAT3', 1.638);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('BJ0004', 'KLBJ01', 'CAT4', 1.488);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('BJ0005', 'KLBJ01', 'CAT5', 1.388);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('BJ0006', 'KLBJ01', 'CAT6', 1.288);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('BJ0007', 'KLBJ01', 'CAT7', 1.188);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AS0001', 'PHAS01', 'VIP', 1.498);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AS0002', 'PHAS01', 'PS1', 1.388);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AS0003', 'PHAS01', 'PS2', 1.278);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AS0004', 'PHAS01', 'PS3', 1.178);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AS0005', 'PHAS01', 'PS4', 1.078);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AA0001', 'KLAA01', 'VVIP', 1.633);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('SS0001', 'PGSA01', 'CAT1', 1.398);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('SM0001', 'KLSM01', 'Rinkside', 1.278);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AA0002', 'KLAA01', 'VIP', 1.533);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AA0003', 'KLAA01', 'C1', 1.463);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AA0004', 'KLAA01', 'C2', 1.433);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AA0005', 'KLAA01', 'C3', 1.362);
+INSERT INTO SEAT (SID, VID, STYPE, SPRICEMODIFIER) 
+	VALUES ('AA0006', 'KLAA01', 'C4', 1.263);
+	
+--Band=============================================================================================
+INSERT INTO BAND (BID, BNAME, BDESC) 
+	VALUES ('B00001', 'Jay Chou', 'Jay Chou is a Taiwanese musician, singer, songwriter, record producer, film producer, actor, and director.');
+INSERT INTO BAND (BID, BNAME, BDESC) 
+	VALUES ('B00002', 'Li Rong Hao', 'Li Rong Hao (born July 11, 1985 in Bengbu, Anhui) is a Chinese singer-songwriter and producer. He has released 3 studio albums and two EPs, and won the Golden Melody Award for Best New Singer in 2013.');
+INSERT INTO BAND (BID, BNAME, BDESC) 
+	VALUES ('B00003', 'Tsai Chin', 'Tsai Chin is a pop and folk singer from Taiwan. Tsai sings in both Mandarin Chinese and Taiwanese Hokkien and is known for her naturally magnetic, rich vocals and witty persona.');
+INSERT INTO BAND (BID, BNAME, BDESC) 
+	VALUES ('B00004', 'Kenneth Bruce Gorelick', 'Kenneth Bruce Gorelick (born June 5, 1956), better known by his stage name Kenny G, is an American jazz saxophonist. His 1986 album, Duotones, brought him commercial success');
+INSERT INTO BAND (BID, BNAME, BDESC) 
+	VALUES ('B00005', 'Hannah Brown, Christie Brinkley, Alan Bersten', 'The band of 3 persons that from the disney that brings an amazing and wonderful shows during weekends');
+	
+--Redemption Item=============================================================================================
+INSERT INTO REDEMPTIONITEM (RID, RNAME, RSTOCK, RPOINTNEEDED, RDESC, RIMG) 
+	VALUES ('R00001', 'BIGBANG Official Lightstick Ver.4', 20, 1500, 'The Big Bang BIGBANG official cheer penlight Ver4 ', 'BigBang-Lightstick.jpg');
+INSERT INTO REDEMPTIONITEM (RID, RNAME, RSTOCK, RPOINTNEEDED, RDESC, RIMG) 
+	VALUES ('R00002', 'BTS WORLD TOUR LOVE YOURSELF HAND FAN', 10, 500, 'Size: diameter 18CM, High-definition printing, To bring you cool ', 'BTS-Mini-Fan.jpg');
+INSERT INTO REDEMPTIONITEM (RID, RNAME, RSTOCK, RPOINTNEEDED, RDESC, RIMG) 
+	VALUES ('R00003', 'Skytropolis Theme Park - One Day Pass', 2, 100000, 'Spanning over 400,000 sq ft, Skytropolis Indoor Theme Park promises endless fun for everyone in the family!', 'skytropolis.png');
+
+--Concert=============================================================================================
+INSERT INTO CONCERT (CID, CNAME, CDATE, BID, VID, CBASEPRICE, CIMG) 
+	VALUES ('C00001', 'JAY CHOU CARNIVAL WORLD TOUR – KUALA LUMPUR', '2020-02-29', 'B00001', 'KLBJ01', 250.0, 'jay.jpg');
+INSERT INTO CONCERT (CID, CNAME, CDATE, BID, VID, CBASEPRICE, CIMG) 
+	VALUES ('C00002', 'RONGHAO LI IF I WERE YOUNG WORLD TOUR- KUALA LUMPUR 2020', '2020-02-15', 'B00002', 'KLAA01', 195.0, 'ronghao.jpg');
+INSERT INTO CONCERT (CID, CNAME, CDATE, BID, VID, CBASEPRICE, CIMG) 
+	VALUES ('C00003', 'TSAI CHIN LIVE CONCERT IN PENANG 2020', '2020-02-15', 'B00003', 'PGSA01', 180.0, 'tsaichin.jpg');
+INSERT INTO CONCERT (CID, CNAME, CDATE, BID, VID, CBASEPRICE, CIMG) 
+	VALUES ('C00004', 'KENNY G WORLD TOUR 2020 IN MALAYSIA', '2020-02-16', 'B00004', 'PHAS01', 100.0, 'kenny.jpg');
+INSERT INTO CONCERT (CID, CNAME, CDATE, BID, VID, CBASEPRICE, CIMG) 
+	VALUES ('C00005', 'DISNEY ON ICE PRESENTS LIVE YOUR DREAMS', '2020-03-23', 'B00005', 'KLSM01', 40.0, 'disney.jpg');
+
+--Ticket=============================================================================================
+INSERT INTO TICKET (TID, TQTY, CID, SID, MID) 
+	VALUES ('T00001', 5, 'C00001', 'BJ0002', 'M00003');
+INSERT INTO TICKET (TID, TQTY, CID, SID, MID) 
+	VALUES ('T00002', 3, 'C00001', 'BJ0001', 'M00002');
+INSERT INTO TICKET (TID, TQTY, CID, SID, MID) 
+	VALUES ('T00003', 1, 'C00002', 'AA0002', 'M00001');
+INSERT INTO TICKET (TID, TQTY, CID, SID, MID) 
+	VALUES ('T00004', 8, 'C00002', 'AA0002', 'M00003');
+INSERT INTO TICKET (TID, TQTY, CID, SID, MID) 
+	VALUES ('T00005', 2, 'C00003', 'AS0003', 'M00001');
+
+
+--Redemption Transaction=============================================================================================
+INSERT INTO REDEMPTIONTRANS (RDID, MID, RID, RDQTY, RDDATE) 
+	VALUES ('RD0001', 'M00003', 'R00001', 1, '2020-01-04');
+INSERT INTO REDEMPTIONTRANS (RDID, MID, RID, RDQTY, RDDATE) 
+	VALUES ('RD0002', 'M00001', 'R00002', 1, '2020-01-16');
