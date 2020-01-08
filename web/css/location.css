@@ -1,0 +1,135 @@
+﻿.courage{
+	margin:20px 0px 20px 0px;
+	width:70%;
+	float:left;
+	background-color:rgb(0,40,80);
+	color:white;
+	font-size:20px;
+	border:3px white outset;
+	padding:5px;
+	margin-left:250px;
+}
+
+.courage:hover{
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+}
+
+.visit{
+	margin:20px 0px 20px 0px;
+	width:70%;
+	float:left;
+	background-color:rgb(0,40,80);
+	color:white;
+	font-size:20px;
+	border:3px white outset;
+	padding:5px;
+	margin-left:250px;
+
+}
+.location{
+	margin-top:20px;
+	letter-spacing:2px;
+	font-size:25px;
+	width:100%;
+	float:left;
+	padding-left:20px;
+}
+
+.location2{
+	margin-top:20px;
+	letter-spacing:2px;
+	font-size:25px;
+	width:100%;
+	float:left;
+	padding-left:20px;
+}
+
+.location3{
+	margin-top:20px;
+	letter-spacing:2px;
+	font-size:25px;
+	width:100%;
+	float:left;
+	padding-left:20px;
+}
+.image{
+	margin-left:650px;
+}
+.table {
+  width:100%;
+  margin-left:0px;
+  font-size: 25px;
+}
+.table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 25px;
+}
+.th, td {
+  padding: 30px;
+  text-align: left;
+  font-size: 25px;
+}
+.table#t01 tr:nth-child(even) {
+  background-color: #eee;
+  font-size: 25px;
+}
+.table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+ font-size: 25px;
+}
+.table#t01 th {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+.auto-style1 {
+	font-weight: normal;
+	background-color: #000000;
+	color: #FF00FF;
+	font-size: 25px;
+}
+.auto-style2 {
+	background-color:rgb(0,40,80,0.7);
+}
+.auto-style3 {
+	color:black;
+	background-color: #FFFFFF;
+	font-size: 25px;
+}
+.auto-style4 {	
+	color:black;
+	font-size:25px;
+}
+.auto-style5 {	
+	color:black;
+	font-size: 25px;
+	background-color: #FFFFFF;
+}
+.auto-style6 {	
+	color:black;
+	font-size: 25px;
+	background-color:white;
+}
+.auto-style7 {	
+	color:rgb(255,255,255,0.9);
+	background-color:rgb(0,40,80,0.7);
+	font-size: 25px;
+}
+.auto-style9 {	
+	color:black;
+	background-color: #000000;
+	font-size: 25px;
+}
+.auto-style11 {
+	font-size: 25px;
+	color:black;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.contain{
+	margin-bottom:20px;
+	font-size: 25px;
+}

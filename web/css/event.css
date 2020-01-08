@@ -1,0 +1,102 @@
+/*
+
+	Author: Adwin Ong Kok Quan
+	Tutorial Group: DIA (3)
+	
+*/
+
+.event-display {
+	
+	width: 100%;
+	margin: auto;
+}
+
+.event-display .event-items {
+	width: 85%;
+	height: 1200px;
+	margin: 20px auto;
+	background-color: rgba(255,255,255,0.1);
+	padding: 0px;
+}
+
+.event-display .event-items .promo-art {
+	width: 60%;
+	margin: 20px;
+	float: left;
+	block: inline;
+}
+
+.event-display .event-items .event-detail {
+	width: 30%;
+	height: 1000px;
+	padding: 20px;
+	margin: 0px;
+	float: left;
+	block: inline;
+}
+.event-display .event-items .heading {
+	background-color: rgba(235, 67, 52, 0.2);
+}
+.heading {
+	background-color: rgba(25,25,25, 0.5);
+	letter-spacing: 2px;
+	padding: 20px;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 20px;
+	
+}
+
+.info-title {
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: grey;
+}
+
+.heading h1, h2 {
+	text-transform: uppercase;
+}
+
+.heading p {
+	letter-spacing: 5px;
+}
+
+.display-items {
+	width: 100%;
+	margin: 5px auto;
+	margin-top: 0px;
+	padding: 20px;
+	height: 300px;
+}
+
+
+
+#display .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 80%;
+	opacity: 0;
+	transition: 1s ease;
+}
+
+#display .overlay-text a {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#display .container:hover .overlay {
+	opacity: 1;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#display .container:hover .overlay-text a{
+	left: 50%;
+}

@@ -1,0 +1,181 @@
+/*
+
+	Author: Adwin Ong Kok Quan
+	Tutorial Group: DIA (3)
+	
+*/
+
+.carousel-item img {
+	margin: 0px auto;
+	display: block;
+	height: 600px;
+}
+
+
+#video .carousel-item {
+	padding: 40px;
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.carousel-item iframe {
+	width: 32%;
+	margin-left: 3px;
+	margin-right: 3px;
+	height: 345; 
+}
+
+.product-display, .software-display {
+	background-color: rgba(255,255,255,0.1);
+	width: 100%;
+	margin: auto;
+}
+
+.heading {
+	background-color: rgba(25,25,25, 0.5);
+	letter-spacing: 2px;
+	padding: 20px;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 20px;
+	
+}
+
+.heading h1, h2 {
+	text-transform: uppercase;
+}
+
+.heading p {
+	letter-spacing: 5px;
+}
+
+.display-items {
+	width: 100%;
+	margin: 5px auto;
+	margin-top: 0px;
+	padding: 20px;
+	height: 300px;
+}
+
+/*Video Display*/
+.video-display .display-items .container {
+	position: relative;
+	width: 33%;
+	height: 100%;
+	float: left;
+	margin: 0px auto;
+}
+
+.video-display .display-items .container:nth-child(2) {
+	width: 32%;
+	margin: 0px 1%;
+}
+
+#display .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 80%;
+	opacity: 0;
+	transition: 1s ease;
+}
+
+#display .overlay-text a {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#display .container:hover .overlay {
+	opacity: 1;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#display .container:hover .overlay-text a{
+	left: 50%;
+}
+
+#promote, #learn {
+	height: 400px;
+	padding: 0px;
+	margin: 50px auto;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(255,255,255,0.1);
+}
+
+#promote .container-left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+#promote img {
+	display: block;
+	float: left;
+	height: 400px;
+	padding: 50px;
+	background-color: rgba(25,25,25, 0.5);
+}
+
+#promote .promote-text {
+	float: left;
+	width: 30%;
+	margin: 50px;
+	letter-spacing: 2px;
+	line-height: 30px;
+}
+
+#promote .promote-text ul {
+	list-style-type: circle;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#learn .container-right {
+	display: block;
+	height: 100%;
+	width: 75%;
+	float: right;
+}
+
+#learn .container-left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+#learn img {
+	display: block;
+	float: right;
+	height: 400px;
+	padding: 50px;
+	background-color: rgba(25,25,25, 0.5);
+}
+
+#learn .learn-text {
+	margin: 50px;
+	line-height: 30px;
+	letter-spacing: 2px;
+}
+
+.linkbtn {
+	height: 100px;
+	border: none;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	padding: 20px;
+}
+
+.linkbtn:hover {
+	background-color: rgb(20,20,35);
+}

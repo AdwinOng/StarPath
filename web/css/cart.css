@@ -1,0 +1,17 @@
+﻿#date{
+	float:right;
+}
+
+table{
+	text-align:center;	
+	padding:auto;
+	font-size: 20px;
+	margin:auto;
+
+}
+
+.center-container{
+	width: 100%;
+	margin: 10px auto;
+	text-align: center;
+}

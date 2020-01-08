@@ -1,0 +1,29 @@
+﻿.reset{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
+	color:black;
+	width:auto;
+	background-color:white;
+	font-family:"Gill Sans MT", Calibri;
+	 margin-left:50px;
+	 font-size:25px;
+}
+.reset:hover {
+		color:blue;
+}
+.submit{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
+	color:black;
+	background-color:white;
+	font-family:"Gill Sans MT", Calibri;
+	width:auto;
+font-size:25px;
+	 margin-left:100px;
+}
+.submit:hover {
+		color:blue;
+}
+
